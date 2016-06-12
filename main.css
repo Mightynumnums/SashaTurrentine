@@ -3,9 +3,10 @@
 
 body {
     background: white;
-    width: 90%;
+    width: 98%;
     margin: auto;
     font-family: 'Jaldi';
+    overflow: hidden;
 }
 
 a {
@@ -21,10 +22,12 @@ h1 {
    margin: none;
 }
 
+
 /********MAIN NAME******/
 
 .title {
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;
 
 }
 
@@ -47,11 +50,11 @@ h1 {
 .navigation  {
     display: flex;
     flex-direction: row no-wrap;
-   justify-content: flex-end;
+    justify-content: flex-end;
     margin-bottom: 20px;
-    margin-top: -60px;
-   }
+    margin-top: 10px;
 
+   }
 
 
 /********DROPDOWN MENU ON NAVIGATION******/
@@ -60,8 +63,8 @@ h1 {
 .navigation a {
     background-color: white;
     color: #695D66;
-    padding: 16px;
-    font-size: 22px;
+    padding: 20px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     font-family: 'Jaldi';
@@ -84,13 +87,12 @@ h1 {
 
 .dropdown-content a {
     color: #E0D3DE;
-    padding: 12px 16px;
+    padding: 5px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-  /*  background-color: #E6DFE4;*/
     color: #695D66 ;
 
 }
@@ -98,6 +100,7 @@ h1 {
 .dropdown:hover .dropdown-content {
     display: block;
     border: 1.5px solid #E0D3DE;
+    margin-top: -20px;
 }
 
 .dropdown:hover .dropbtn {
@@ -107,10 +110,13 @@ h1 {
 
 /********IMAGE CARUSELE******/
 
+.fade {
+    margin-top: -20px;
+}
 
 .fade img {
-    height: 525px;
-    width: auto;
+    height: 200px;
+    width: 300px;
     margin: 10px auto;
     padding-right: 10px;
 }
@@ -125,8 +131,8 @@ h1 {
 
 }
 .contact img {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 /********BRING ME BACK******/
@@ -141,20 +147,72 @@ h1 {
 
 
 /********FOOTER******/
+
 footer {
     text-align: center;
     margin-top: 50px;
     color: #4F6178;
 }
 
-/********MEDIA Q******/
-@media only screen and (min-width: 480px){}
+/******** MEDIA QUERIES ******/
 
-@media only screen and (min-width: 768px){}
+@media only screen and (min-width: 481px){
+    body{
+        background-color: yellow;
+    }
+    .navigation {
+        justify-content: space-around;
+    }
 
-@media only screen and (min-width: 900px){}
+    
 
-@media (min-width: 1224px){}
+    
+}
+
+    @media only screen and (min-width: 1024px) {
+        body { background-color: white;
+                width: 80%;
+                overflow: scroll;
+            }
+            
+        .fade {
+        margin-top: 20px;
+         }
+
+        .fade img {
+            height: 500px;
+            width: auto;
+        }
+    /********MAIN NAME******/
+
+.title {
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+/*******NAVIGATION MENU******/
+
+.navigation  {
+    display: flex;
+    flex-direction: row no-wrap;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    margin-top: -70px;
+
+   }
+   .contact img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 
