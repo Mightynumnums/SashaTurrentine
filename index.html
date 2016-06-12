@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sasha Turrentine Photography</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.5.9/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.5.9/slick/slick-theme.css">
+	<link href='https://fonts.googleapis.com/css?family=Jaldi|Voltaire|Alegreya+Sans+SC:400,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+		<header class="title">
+			<h1 class="name">Sasha</h1>
+			<h1 class="surname">Turrentine</h1>
+
+
+		
+			<ul class="navigation">
+				<li class="dropdown">
+				  <button class="dropbtn">Images</button>
+				  <div class="dropdown-content">
+				    <a href="#">Food</a>
+				    <a href="#">Travel | Life</a>
+				    <a href="#">Wedding | Event</a>
+				 </li>
+				  </div>
+				<li class="dropdown">
+				  <button class="dropbtn">Stories</button>
+				  <div class="dropdown-content">
+				    <a href="#">In The Grey</a>
+				    <a href="#">Suspended</a>
+				    <a href="#">Father's Day</a>
+				</li>
+				  </div>
+				<li class="dropdown">
+					<button class="dropbtn">About</button>
+				</li>
+				<li class="dropdown">
+					<button class="dropbtn">Contact</button>
+				</li>
+			
+			</ul>
+		</header>
+
+	<!--image carousel-->
+
+	<div class="fade">
+  		<div><img src="img/mainp/websize/cevicheW.jpg"></div>
+  		<div><img src="img/mainp/websize/fallW.jpg"></div>	
+  		<div><img src="img/mainp/websize/radishW.jpg"></div>
+  		<div><img src="img/mainp/websize/carrotW.jpg"></div>
+  		<div><img src="img/mainp/websize/dishW.jpg"></div>
+  		<div><img src="img/mainp/websize/lemonW.jpg"></div>
+  		<div><img src="img/mainp/websize/loxW.jpg"></div>
+  		<div><img src="img/mainp/websize/purpleW.jpg"></div>
+  		<div><img src="img/mainp/websize/scallopW.jpg"></div>
+  	
+	</div>
+
+
+	<!--image carousel-->
+
+
+
+	<div class="contact" id="follow me">
+		<div class="mail social"><a href="mailto:sasha.turrentine@gmail.com"><img src="social/mail.svg"></a></div>
+		<div class="fb social"><a href="https://www.facebook.com/Sasha-Turrentine-photography-164241463730139/"><img src="social/fbook.svg"></a></div>
+		<div class="insta social"><a href="https://www.instagram.com/sashaturrentine/"><img src="social/insta.svg"></a></div>
+    </div>
+    
+    <div id="bringmeback">
+    	<a href="#top">BACK TO TOP &raquo;</a>
+    </div>
+
+    <footer>
+    	<p>&copy; 2016 Sasha Turrentine Photography | all photos &copy Sasha Turrentine
+    	</p>
+    </footer>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.5.9/slick/slick.min.js"></script>
+	
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	var parameters = {
+				dots: true,
+				autoplay: true,
+				autoPlayTimer: 3000,
+				infinite: true,
+				speed: 500,
+				cssEase: 'linear',
+				variableWidth: true
+			}
+
+	      	$('.fade').slick(parameters);
+	    });
+	</script>
+
+						
+    </body>
+    </html>

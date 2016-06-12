@@ -1,0 +1,166 @@
+
+/********MAIN******/
+
+body {
+    background: white;
+    width: 90%;
+    margin: auto;
+    font-family: 'Jaldi';
+}
+
+a {
+    text-decoration: none;
+
+}
+ul, li{
+    list-style: none;
+}
+
+
+h1 {
+   margin: none;
+}
+
+/********MAIN NAME******/
+
+.title {
+    margin-top: 10px;
+
+}
+
+
+.name, 
+.surname {
+    margin: 0;
+    letter-spacing: 8px;
+}
+
+.surname {
+    margin-top: -20px;
+    color: #695D66;
+}
+
+
+
+/*******NAVIGATION MENU******/
+
+.navigation  {
+    display: flex;
+    flex-direction: row no-wrap;
+   justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: -60px;
+   }
+
+
+
+/********DROPDOWN MENU ON NAVIGATION******/
+
+.dropbtn,
+.navigation a {
+    background-color: white;
+    color: #695D66;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Jaldi';
+}
+
+.menu, 
+.stories {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    min-width: 160px;
+
+}
+
+.dropdown-content a {
+    color: #E0D3DE;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  /*  background-color: #E6DFE4;*/
+    color: #695D66 ;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border: 1.5px solid #E0D3DE;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+
+/********IMAGE CARUSELE******/
+
+
+.fade img {
+    height: 525px;
+    width: auto;
+    margin: 10px auto;
+    padding-right: 10px;
+}
+
+/********SOCIAL******/
+
+.contact {
+    display: flex;
+    flex-direction: row wrap;
+   justify-content: center;
+   margin-top: 100px;
+
+}
+.contact img {
+    height: 50px;
+    width: 50px;
+}
+
+/********BRING ME BACK******/
+
+#bringmeback {
+    text-align: center;
+    margin-top: 30px;
+}
+    #bringmeback a {
+    color: #4F6178;
+}
+
+
+/********FOOTER******/
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #4F6178;
+}
+
+/********MEDIA Q******/
+@media only screen and (min-width: 480px){}
+
+@media only screen and (min-width: 768px){}
+
+@media only screen and (min-width: 900px){}
+
+@media (min-width: 1224px){}
+
+
+
+
+
+
+
+
+
