@@ -12,6 +12,7 @@ a {
     text-decoration: none;
 
 }
+
 ul, li {
     list-style: none;
 }
@@ -44,14 +45,6 @@ h1 {
 
 
 /*******NAVIGATION MENU for DESCKTOP******/
-
-.navigation  {
-    display: flex;
-    flex-direction: column no-wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
-   }
    
 .hidden {
     display: none;
@@ -75,7 +68,7 @@ h1 {
 .navigation a {
     background-color: white;
     color: #695D66;
-    padding: 20px;
+    padding: 15px;
     font-size: 20px;
     border: none;
     cursor: pointer;
@@ -101,9 +94,14 @@ h1 {
 .dropdown-content a,
 #mobile a {
     color: #E0D3DE;
-    padding: 10px 16px;
+    padding: 5px 16px;
     text-decoration: none;
     display: block;
+}
+
+.dropbtn:hover{
+    color: #E0D3DE;
+
 }
 
 .dropdown-content a:hover {
@@ -114,10 +112,16 @@ h1 {
     display: block;
     border: 1.5px solid #E0D3DE;
     margin-top: -20px;
+    letter-spacing: 5px;
 }
 
 .dropdown:hover .dropbtn {
     background-color: white;
+}
+
+#about,
+#contact {
+    font-weight: bolder;
 }
 
 /********DROPDOWN MENU ON NAVIGATION for MOBILE(built mobile first)******/
@@ -130,6 +134,8 @@ h1 {
     float: center;
     margin-right: 5px;
 }
+
+
 #mobile {
     position: absolute;
     background-color: white;
@@ -138,7 +144,8 @@ h1 {
     text-align: center;
     float: right;
     margin-top: 10px;
-    margin-left: 85px;
+    margin-left: 75px;
+      letter-spacing: 2px;
 }
 
 #mobile a {
@@ -146,10 +153,16 @@ h1 {
     margin-top: -10px;    
 } 
 
+#mobile a:hover {
+    color: #695d66;
+    font-size: 16px;
+}
+
 #about a,
 #contact a {
     color: black;
 }
+
 #mobile ul, li {
     padding-right: 40px;
 }
@@ -167,6 +180,10 @@ h1 {
     margin: 10px auto;
     padding-right: 0;
 }
+#shauna img{
+    height: 275px;
+    width:auto;
+}
 
 /********SOCIAL******/
 
@@ -181,6 +198,7 @@ h1 {
     height: 30px;
     width: 30px;
 }
+
 .contact img:hover {
     opacity: 0.4;
 
@@ -204,6 +222,7 @@ footer {
     margin-top: 50px;
     color: #4F6178;
 }
+
 #footer-copy {
     font-size: 12px;
 }
@@ -220,6 +239,7 @@ footer {
     .navigation {
         justify-content: space-around;
     }
+
     #mobile {
     margin-top: 10px;
     margin-left: 150px;
@@ -244,6 +264,10 @@ footer {
                 margin: 10px auto;
                 padding-right: 10px;
             }
+            #shauna img{
+        height: 500px;
+        width:auto;
+    }
 
     /********MAIN NAME******/
 
@@ -259,6 +283,7 @@ footer {
         display: flex;
         flex-direction: row no-wrap;
         justify-content: flex-end;
+        align-content: space-around;
         margin-bottom: 20px;
         margin-top: -60px;
        }
