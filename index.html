@@ -14,9 +14,39 @@
 			<h1 class="name">Sasha</h1>
 			<h1 class="surname">Turrentine</h1>
 
+			<a href="javascript:void(0);" onclick="showMenu()"><img id="menubtn" src="social/menu.svg"></a>
+
 
 		
-			<ul class="navigation">
+			<ul class="navigation" id="desktop">
+				<li class="dropdown">
+				  <button class="dropbtn">Images</button>
+				  <div class="dropdown-content">
+				    <a href="#">Food</a>
+				    <a href="#">Travel | Life</a>
+				    <a href="#">Wedding | Event</a>
+				 </li>
+				  </div>
+				<li class="dropdown">
+				  <button class="dropbtn">Stories</button>
+				  <div class="dropdown-content">
+				    <a href="#">In The Grey</a>
+				    <a href="#">Suspended</a>
+				    <a href="#">Father's Day</a>
+				</li>
+				  </div>
+				<li class="dropdown">
+					<button class="dropbtn">About</button>
+				</li>
+				<li class="dropdown">
+					<button class="dropbtn">Contact</button>
+				</li>
+			</ul>
+
+		
+
+
+			<ul class="navigation hidden" id="mobile">
 				<li class="dropdown">
 				  <button class="dropbtn">Images</button>
 				  <div class="dropdown-content">
@@ -41,7 +71,10 @@
 				</li>
 			
 			</ul>
+		
 		</header>
+
+
 
 	<!--image carousel-->
 
@@ -95,7 +128,12 @@
 			}
 
 	      	$('.fade').slick(parameters);
+	      	
 	    });
+	    function showMenu() {
+	      		document.getElementById("mobile").classList.toggle("hidden");
+	      	}
+
 	</script>
 
 						

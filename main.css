@@ -27,7 +27,8 @@ h1 {
 
 .title {
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
+
 
 }
 
@@ -46,6 +47,14 @@ h1 {
 
 
 /*******NAVIGATION MENU******/
+#menubtn {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    float: right;
+}
+
 
 .navigation  {
     display: flex;
@@ -56,6 +65,17 @@ h1 {
 
    }
 
+.hidden {
+    display: none;
+}
+
+#desktop {
+    display: none;
+}
+
+#mobile {
+    
+}
 
 /********DROPDOWN MENU ON NAVIGATION******/
 
@@ -111,7 +131,7 @@ h1 {
 /********IMAGE CARUSELE******/
 
 .fade {
-    margin-top: -20px;
+    margin-top: 50px;
 }
 
 .fade img {
@@ -164,6 +184,7 @@ footer {
         justify-content: space-around;
     }
 
+
     
 
     
@@ -171,7 +192,7 @@ footer {
 
     @media only screen and (min-width: 1024px) {
         body { background-color: white;
-                width: 80%;
+                width: 90%;
                 overflow: scroll;
             }
             
@@ -185,11 +206,11 @@ footer {
         }
     /********MAIN NAME******/
 
-.title {
-    margin-top: 20px;
-    text-align: left;
+    .title {
+        margin-top: 20px;
+        text-align: left;
 
-}
+    }
 
 /*******NAVIGATION MENU******/
 
@@ -205,6 +226,18 @@ footer {
     height: 50px;
     width: 50px;
 }
+
+#mobile {
+    display: none;
+}
+#menubtn {
+    display: none;
+}
+#desktop {
+    display: flex;
+}
+}
+
 
 
 
