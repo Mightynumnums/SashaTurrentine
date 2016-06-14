@@ -99,10 +99,11 @@ h1 {
     display: block;
 }
 
-.dropbtn:hover{
+.dropbtn:hover {
     color: #E0D3DE;
 
 }
+
 
 .dropdown-content a:hover {
     color: #695D66 ;
@@ -134,6 +135,9 @@ h1 {
     float: center;
     margin-right: 5px;
 }
+#menubtn:hover {
+    opacity: 0.4;
+}
 
 
 #mobile {
@@ -145,7 +149,7 @@ h1 {
     float: right;
     margin-top: 10px;
     margin-left: 75px;
-      letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 #mobile a {
@@ -156,6 +160,7 @@ h1 {
 #mobile a:hover {
     color: #695d66;
     font-size: 16px;
+    padding: 12px;
 }
 
 #about a,
