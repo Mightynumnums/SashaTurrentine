@@ -82,10 +82,10 @@ h1 {
 }
 
 .dropdown-content {
+    background-color: white;
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: white;
     min-width: 160px;
     margin-left: -38px;
 
@@ -232,7 +232,56 @@ footer {
     font-size: 12px;
 }
 
+/*********************** ABOUT PAGE CSS ************************/
+/********************************************************** ************************/
 
+#selfie {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/***********************STORIES STYLES************************/
+/***********************************************************************************/
+.story1,
+.story2 { 
+    width: 95%;
+    float: center;
+    text-align: left;
+    font-size: 15px;
+    margin: auto;
+    display: block;
+}
+
+#fday,
+#sj {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+
+#dad img {
+    display: block;
+    margin: auto;
+    height: 350px;
+    width: 350px;
+    padding-bottom: 20px;
+
+}
+
+.sj-images img {
+        margin-bottom: 20px;
+        width: 350px;
+        height: auto;
+        padding-left: 10px;
+
+    }
 
 
 /*********************** MEDIA QUERIES ************************/
@@ -319,6 +368,37 @@ footer {
         height: 50px;
         width: 50px;
         }
+
+
+
+        /*******STORY TIME PAGES******/
+
+    .story1,
+    .story2 { 
+        width: 80%;
+        margin-top: 20px;
+        }
+
+        #dad {
+            width: 100%;
+        }
+
+
+ 
+
+    .sj-images {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sj-images img {
+        margin-bottom: 40px;
+        height:100%;
+        width: auto;
+
+    }
 }
 
 /*    @media only screen and (min-width: 1024px) {
