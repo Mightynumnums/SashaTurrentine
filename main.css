@@ -39,7 +39,14 @@ h1 {
 
 .surname {
     margin-top: -20px;
-    color: #695D66;
+}
+
+.surname a{
+    color: #4D414B;
+}
+.name a{
+    color: #968F95;
+
 }
 
 
@@ -62,7 +69,7 @@ h1 {
 
 }
 
-/********DROPDOWN MENU ON NAVIGATION for DESKTOP******/
+/***************************DROPDOWN MENU ON NAVIGATION for DESKTOP/MOBILE************************************/
 
 .dropbtn,
 .navigation a {
@@ -142,18 +149,19 @@ h1 {
 
 #mobile {
     position: absolute;
+    width: 220px;
     background-color: white;
     z-index: 1; 
     border: 1px solid #695d66 ;
     text-align: center;
     float: right;
     margin-top: 10px;
-    margin-left: 75px;
+    margin-left: 60px;
     letter-spacing: 2px;
 }
 
 #mobile a {
-    font-size: 15px;
+    font-size: 18px;
     margin-top: -10px;    
 } 
 
@@ -249,21 +257,26 @@ footer {
 /***********************STORIES STYLES************************/
 /***********************************************************************************/
 .story1,
-.story2 { 
-    width: 95%;
+.story2,
+.inthegray { 
+    width: 85%;
     float: center;
     text-align: left;
     font-size: 15px;
     margin: auto;
     display: block;
+    overflow: none;
 }
 
 #fday,
 #sj {
+    width: 100%;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    float:left;
 }
+
  
 
 #dad img {
@@ -275,13 +288,19 @@ footer {
 
 }
 
-.sj-images img {
+.sj-images img,
+.inthegray img {
         margin-bottom: 20px;
         width: 350px;
         height: auto;
-        padding-left: 10px;
-
     }
+
+.sj-images {
+    margin-top: 30px;
+}
+
+
+
 
 
 /*********************** MEDIA QUERIES ************************/
@@ -374,30 +393,40 @@ footer {
         /*******STORY TIME PAGES******/
 
     .story1,
-    .story2 { 
+    .story2, 
+    .inthegray { 
         width: 80%;
         margin-top: 20px;
+        margin-bottom: 40px;
         }
+
 
         #dad {
             width: 100%;
         }
 
+        .story2,
+        .inthegray {
+            display: flex;
+            flex-direction: column;
+        }
+
 
  
 
-    .sj-images {
+    .sj-images,
+    .inthegray {
         width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .sj-images img {
         margin-bottom: 40px;
         height:100%;
         width: auto;
-
     }
 }
 
