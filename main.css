@@ -203,8 +203,8 @@ h1 {
 .contact {
     display: flex;
     flex-direction: row wrap;
-   justify-content: center;
-   margin-top: 100px;
+    justify-content: center;
+     margin-top: 100px;
 }
 
 .contact img {
@@ -258,23 +258,39 @@ footer {
 /***********************************************************************************/
 .story1,
 .story2,
-.inthegray { 
+.story3,
+.story3 h3 { 
     width: 85%;
     float: center;
     text-align: left;
-    font-size: 15px;
+    font-size: 18;
     margin: auto;
     display: block;
     overflow: none;
 }
 
-#fday,
-#sj {
-    width: 100%;
+.story3 h3 {
     font-size: 20px;
+}
+
+
+
+
+#fday,
+#sj,
+#ingray {
+    width: 100%;
+    font-size: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
-    float:left;
+    letter-spacing: 3px;
+    color: #968F95;
+}
+
+#title3,
+#title4 {
+    color: #968F95;
+
 }
 
  
@@ -298,6 +314,15 @@ footer {
 .sj-images {
     margin-top: 30px;
 }
+
+
+.story3 img {  
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
 
 
 
@@ -344,7 +369,7 @@ footer {
 
     /********MAIN NAME******/
 
-        .title {
+    .title {
             margin-top: 20px;
             text-align: left;
 
@@ -394,19 +419,19 @@ footer {
 
     .story1,
     .story2, 
-    .inthegray { 
+    .story3 { 
         width: 80%;
         margin-top: 20px;
         margin-bottom: 40px;
         }
 
 
-        #dad {
+    #dad {
             width: 100%;
         }
 
-        .story2,
-        .inthegray {
+    .story2,
+    .story3 {
             display: flex;
             flex-direction: column;
         }
@@ -415,7 +440,7 @@ footer {
  
 
     .sj-images,
-    .inthegray {
+    .story3 {
         width: 95%;
         display: flex;
         flex-direction: column;
@@ -428,6 +453,18 @@ footer {
         height:100%;
         width: auto;
     }
+
+    .story3 img {  
+        width: 85%;
+        height: auto;
+    }
+    .story3 p {
+        width: 85%;
+   }
+
+   #ingray{
+    width: 85%;
+   }
 }
 
 /*    @media only screen and (min-width: 1024px) {
