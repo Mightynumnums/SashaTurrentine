@@ -330,14 +330,15 @@ footer {
   left: 0;
   text-align: center;
   background: white;
+  background: rgba(0, 0, 0, 0.8);
+
 }
 
 .lightbox img {
   /** Pad the lightbox image */
-  max-width: 90%;
+  max-width: auto;
   max-height: 100%;
-  margin: 35px auto;
-
+  margin: 2% auto;
 }
 
 .lightbox:target {
