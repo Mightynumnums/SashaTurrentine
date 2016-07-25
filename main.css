@@ -250,18 +250,24 @@ footer {
 /********************************************************** ************************/
 
 
-#selfie {
-    width: 100%;
+#selfie, 
+.biomobil {
+    display: block;
+    width: 350px;
     height: auto;
-    margin-top: 30px;
+    margin: 50px auto;
+    text-align: left;
 }
+
+
 
 
 /***********************STORIES STYLES************************/
 /***********************************************************************************/
 
 .story,
-.story h3 { 
+.story h3
+ { 
     width: 85%;
     float: center;
     text-align: left;
@@ -310,10 +316,11 @@ footer {
 .story img,
 #inthegraymain img,
 #suspendedImg img {
-        width: 100%;
+        width: 85%;
         height: auto;
         display: block;
-        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -362,6 +369,9 @@ footer {
 
 
 @media only screen and (min-width: 481px){
+    body{
+        background-color: red;
+    }
     .navigation {
         justify-content: space-around;
     }
@@ -369,7 +379,7 @@ footer {
     #mobile {
     margin-top: 10px;
     margin-left: 150px;
-    } 
+    }
     
 }
 
@@ -378,6 +388,7 @@ footer {
 @media only screen and (min-width : 768px){
     body {
         width: 90%;
+        background-color: yellow;
         }
 
         .fade {
@@ -390,6 +401,7 @@ footer {
                 margin: 10px auto;
                 padding-right: 10px;
             }
+
             #shauna img{
         height: 500px;
         width:auto;
@@ -452,12 +464,26 @@ footer {
         margin: 10px auto;
     }
 
-   
+           #biocontainer {
+            -webkit-column-gap: 10px;
+        
+           }
+
+        #selfie, 
+      .biomobil {
+        width: 550px;
+     }
+    
+   }
 
 
 
 
     @media only screen and (min-width: 1024px) {
+        body{
+            max-width: 85%;
+            background-color: teal;
+        }
         
     .lightbox {
           /** Default lightbox to hidden */
@@ -488,6 +514,34 @@ footer {
         max-width: 40%;
 
         }
+
+        /** ABOUT PAGE STYLES**/
+     /*    #selfie, 
+        .biomobil {
+             width: 350px;
+             height: auto;
+     }*/
+
+           .biocontainer {
+/*
+            table-layout: fixed;
+            -webkit-column-width: 25%;
+            -webkit-column-count: 2;
+            -webkit-column-gap: 2em;*/
+            display: flex;
+            flex-direction: row no-wrap;
+            justify-content: center;
+            align-items: flex-start;
+
+
+        
+           }
+           #selfie,
+           .biomobil {
+             flex-grow: 0;
+             margin: 30px 10px;
+           }
+
     }
          
   
