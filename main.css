@@ -74,7 +74,7 @@ h1 {
 /***************************DROPDOWN MENU ON NAVIGATION for DESKTOP/MOBILE************************************/
 
 .dropbtn,
-.navigation a {
+.navigation .dropdown-content a {
     background-color: white;
     color: #695D66;
     padding: 15px;
@@ -481,7 +481,7 @@ footer {
 
     @media only screen and (min-width: 1024px) {
         body{
-            max-width: 85%;
+            width: 85%;
             background-color: teal;
         }
         
@@ -523,23 +523,17 @@ footer {
      }*/
 
            .biocontainer {
-/*
-            table-layout: fixed;
-            -webkit-column-width: 25%;
-            -webkit-column-count: 2;
-            -webkit-column-gap: 2em;*/
             display: flex;
-            flex-direction: row no-wrap;
+            flex-direction: row nowrap;
             justify-content: center;
             align-items: flex-start;
-
-
-        
+            align-content: space-between;
            }
+
            #selfie,
            .biomobil {
              flex-grow: 0;
-             margin: 30px 10px;
+             margin: 100px 20px;
            }
 
     }
