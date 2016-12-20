@@ -369,9 +369,6 @@ footer {
 
 
 @media only screen and (min-width: 481px){
-    body{
-        background-color: red;
-    }
     .navigation {
         justify-content: space-around;
     }
@@ -379,6 +376,10 @@ footer {
     #mobile {
     margin-top: 10px;
     margin-left: 150px;
+    }
+
+    .dropbtn {
+        margin-top: -16px;
     }
     
 }
@@ -388,21 +389,20 @@ footer {
 @media only screen and (min-width : 768px){
     body {
         width: 90%;
-        background-color: yellow;
         }
 
-        .fade {
+    .fade {
             margin-top: -0px;
              }
 
-        .fade img {
+    .fade img {
                 height: 500px;
                 width: auto;
                 margin: 10px auto;
                 padding-right: 10px;
             }
 
-            #shauna img{
+    #shauna img{
         height: 500px;
         width:auto;
     }
@@ -412,7 +412,6 @@ footer {
     .title {
             margin-top: 20px;
             text-align: left;
-
         }
 
 /*******NAVIGATION MENU******/
@@ -457,19 +456,19 @@ footer {
 
         /*******STORY TIME PAGES******/
 
-.vertical img {
+	.vertical img {
         width: 50%;
         height: auto;
         display: block;
         margin: 10px auto;
     }
 
-           #biocontainer {
+  	#biocontainer {
             -webkit-column-gap: 10px;
         
            }
 
-        #selfie, 
+    #selfie, 
       .biomobil {
         width: 550px;
      }
@@ -480,9 +479,8 @@ footer {
 
 
     @media only screen and (min-width: 1024px) {
-        body{
+        body {
             width: 85%;
-            background-color: teal;
         }
         
     .lightbox {
@@ -522,7 +520,7 @@ footer {
              height: auto;
      }*/
 
-           .biocontainer {
+    .biocontainer {
             display: flex;
             flex-direction: row nowrap;
             justify-content: center;
@@ -530,8 +528,8 @@ footer {
             align-content: space-between;
            }
 
-           #selfie,
-           .biomobil {
+    #selfie,
+    .biomobil {
              flex-grow: 0;
              margin: 100px 20px;
            }
